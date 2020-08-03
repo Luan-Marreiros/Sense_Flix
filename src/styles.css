@@ -1,0 +1,205 @@
+body{
+    background-color: #282c34;
+    overflow-x: hidden;
+}
+
+input{
+    box-shadow: none !important;
+    border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 6px;
+/* display: none; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+height: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+/* Catalogo */
+
+.titleCat{
+    position: relative;
+    top: 100px;
+    color: rgb(179, 167, 167);
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.bgfime{
+    position: relative;
+    top: 150px;
+    margin-bottom: 20px;    
+}
+
+.poster{
+    position: relative;
+    left: -15px;
+    max-height: 277px;
+}
+
+img{
+    cursor: pointer;
+}
+
+.col-md-2{
+    padding: 0 !important;
+}
+
+.poster-text{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    right: 20px;
+    background-color: rgb(224, 224, 224);
+    animation-fill-mode: forwards;
+}
+
+.poster-text h3{
+    text-align: center;
+    color: brown;
+}
+
+.poster-text p {
+    color: rgb(34, 33, 33);
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+.poster-text small {
+    position: static;
+    text-align: left;
+    top: 66px;
+    font-size: 15px;
+    margin: 5px;
+    color: brown;
+    font-weight: bold;
+}
+
+#notaFilme{
+    float: left;
+    max-height: 1px;
+}
+
+#tempoFilme{
+    float: right;
+    max-width: top;
+}
+
+.poster-text:hover{
+    animation: rotation 1s;
+    animation-fill-mode: forwards;
+}
+
+@media(max-width: 650px){
+    .titleCat{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .poster{
+        left: 0px;
+        max-height: 277px;
+    }
+    .poster-text{
+        left: 0px;
+        right: 0px;
+        /* z-index: -1; */
+    }
+
+}
+
+@keyframes rotation{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+
+
+
+
+
+
+/* Home */
+
+.img{
+    background: url('/assets/Imagens/symbol-5300294_640.png') no-repeat;
+    position: relative;
+    top: 50px;
+    width: auto;
+    height: 423px;
+    margin-left: 10px;
+}
+
+.title{
+    color: rgb(199, 175, 175);
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.jumbotron{
+    position: relative;
+    top: 10%;
+    margin: 10px -5px 10px 10px;
+    padding: 2rem 2rem !important;
+}
+
+.btn-botao{
+    background-color: rgb(79, 90, 110) !important;
+    color: white;
+    border: none;
+    height: 37px;
+}
+
+.lead{
+    margin-right: 10px;
+}
+
+@media(max-width: 600px){
+    .img{
+        display: none;
+    }
+    
+    .jumbotron h3{
+        font-size: 25px;
+    }
+
+    .lead{
+        text-align: center;
+    }
+
+}
+
+
+
+
+/* Detalhes */
+
+.rating{
+    position: relative;
+    top: -7px;
+    font-size: 25px;
+    color: rgba(243, 178, 0, 0.952);
+}
+
+span{
+    font-size: 17px !important;
+    font-weight: normal;
+}

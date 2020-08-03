@@ -1,0 +1,31 @@
+nav{
+    background-color: #282c34 !important;
+    color: white !important;
+    margin: 10px;    
+}
+
+nav a{
+    color: rgb(179, 167, 167)!important;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav span{
+    color: rgb(126, 115, 115)!important;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav button{
+    background-color: rgb(79, 90, 110) !important;
+    color: white;
+    border: none;
+}
+
+nav button:hover{
+    background-color: #282c34 !important;
+}
+
+nav button:focus{
+    border: none;
+}
